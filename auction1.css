@@ -1,0 +1,792 @@
+*{
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+
+.nav-link{
+    display: flex;
+    background-color: cornsilk;
+    height: 3rem;
+    position: fixed;
+    top: 0%;
+    width: 100%;
+}
+
+.link1{
+    margin-left: 4%;
+   
+    padding: 5px;
+    transition: 2s letter-spacing;
+    
+}
+
+.link1 ul{
+   list-style-type: none;
+   font-size: 2rem;
+}
+
+.link1 ul a{
+   color: black;
+   display: block;
+   text-decoration: none;
+}
+
+.sign1{
+  margin-left: 15%;
+}
+
+.link1 .serv1 {
+    display: none;
+}
+
+.link1 .serv1 li{
+    padding: 10px;
+}
+.link1:hover{
+  text-decoration: underline;
+  letter-spacing: 4px;
+  color:#ac4b1c;
+}
+
+.link1:hover .serv1{
+    display: block;
+    box-shadow: 4px 15px 8px gray;
+    width: 300px;
+    background-color: #ffd57e;
+     margin-top: 0.3rem;
+    transition: 2s padding-left; 
+}
+
+.link1:hover .serv1 li:hover{
+  padding-left: 24px;
+  text-decoration: none;
+}
+
+/* media query */
+
+@media all and (max-width: 1180px){
+
+    .nav-link{
+        display: none;
+    }
+
+ 
+
+    .link1{
+        width:100%;
+        background-color: tomato;
+        margin: 10px;
+        padding-left: 1rem;
+         border-bottom: 3px solid black; 
+    }
+    
+    .link1:hover {
+        z-index: 100;
+        box-shadow: 4px 5px 8px grey;
+    }
+
+    .link-box{
+        background-color: aliceblue;
+        display: none;
+        z-index: 100;
+    }
+
+    .link1:hover .serv1{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ffd57e;
+     margin-top: 0.3rem;
+    transition: 2s padding-left; 
+   }
+
+   .icon-left{
+     position: absolute;
+     right: 5%;
+     display: flex; 
+   }
+   
+   .logo1{
+       display: flex;
+       font-size: 30px;
+       padding: 1%;
+       position:sticky;
+       top: 0%;
+      background-color: aliceblue;
+   }
+
+   .logo1  h1{
+       text-decoration: underline;
+        margin-left: 4%;
+       transition: 2s letter-spacing;
+   }
+
+   .logo1:hover h1:hover {
+       color: #ac4b1c;
+       letter-spacing: 5px;
+   }
+   
+   .cross1{
+       display: none;
+   }
+  
+   .non1{
+       display: none;
+   }
+
+   .bloc{
+       display: block;
+   }
+
+   .icon-left:hover{
+     color: #e5c5b5;
+   }
+
+}
+
+.secdes a{
+    display: block;
+    margin-top: 4rem;
+    color:white;
+    text-decoration: none;
+    font-size: 2.5rem;
+    cursor: pointer;
+    text-align: center;
+    background-color:#99f3bd ; 
+}
+
+.secdes p{
+    margin-bottom: 30px;
+}
+
+@media all and (min-width :1181px){
+    .max11180{
+        display: none;
+    }
+
+    .secdes a{
+    display: block;
+    margin-top: 10rem;
+    color:white;
+    margin: auto;
+    width: 50%;
+    text-decoration: none;
+    font-size: 2.5rem;
+    text-align: center;
+    cursor: pointer;
+    background-color:#ffe05d ; 
+    }
+
+}
+
+body{
+    background-image: url("./auctimg.webp");
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    background-size: cover;
+     height: 100Vh; 
+    background-position: center;
+}
+
+/* nav section over */
+
+.des1{
+    width:50%;
+     margin:auto; 
+     height: 100%;
+     
+    z-index: -10; 
+    /* overflow: hidden; */
+}
+
+.firdes1{
+    width: 100%;
+margin-top: 10%; 
+   
+}
+
+.firdes{
+  font-size: 2.5rem;
+  color: whitesmoke;
+ font-weight: 1000; 
+}
+
+.secdes{
+   color: white;
+   font-size: 1.5rem;
+   font-weight: 500; 
+   padding-top: 4%; 
+}
+
+
+
+.secdes a:hover{
+    background-color:#7579e7;
+}
+
+
+
+@media all and (max-width:1000px){
+    .des1{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:10%;
+    padding: 2rem;
+   }
+}
+
+.container1{
+    width: 100%;
+    height: 100%;
+}
+
+/* first page is over */
+
+.hicon{
+   display: flex; 
+}
+
+.hdivbloc{
+   width:25%;
+   font-size: 1.5rem;
+   height: 40%; 
+   background-color: #f4f4f4;
+  /* border-right: 3px solid  ;  */
+}
+
+.hiconadm{
+    font-size: 5rem;
+   padding: 5px; 
+   margin-left:10%;
+   color: #ff9642;
+}
+
+
+
+.hiconarrow2{
+    font-size: 2rem;
+    padding-top: 30px;
+     /* color: #ff9642; */
+    padding-left: 5%;
+}
+
+.hdivbloc p{
+ border-right: 3px solid ;
+ padding-left: 3px;
+}
+
+.hdivbloc:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);  
+}
+
+.howblock{
+    display: flex;
+    padding: 20px;
+}
+
+.hdivbloc h1{
+    color: #f08a5d;
+    font-size: 2rem;
+}
+
+.howi1{
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    /* margin: 1rem;  */
+   padding-top: 1rem; 
+}
+
+.container21{
+    background-color:#fbf7f0;
+}
+
+@media all and (max-width: 730px){
+   
+    .hdivbloc{
+        background-color:#fff8cd;
+        display: block;
+        width: 100%;
+        text-align: center;
+         margin: 10px;
+    }
+   
+    .howblock{
+        display: block;
+    }
+   
+    .hiconarrow2{
+        margin-left: 10%;
+    }
+   
+    .hiconadm{
+        margin-left:40% ;
+    }
+
+    .hdivbloc p{
+ border-right: 0px solid ;
+ padding-bottom: 10px;
+  border-bottom: 3px solid;
+  }
+
+  .container21{
+    background-color:#fbf7f0;
+    width: 100%;
+    height: 150vh;
+    padding-bottom: 20px;
+}
+
+}
+
+/* why you choose us */
+
+.why{
+    position: absolute;
+    font-size: 2rem;
+     margin-top: 10%;
+     margin-left: 5%; 
+     font-weight: 1000;
+     text-decoration: underline;
+    color: whitesmoke; 
+    transition: 2s letter-sapcing ease-in-out,  2s padding-left;
+}
+
+.why:hover{
+  letter-spacing: 3px;
+  padding-left: 4rem;
+}
+
+.whyico{
+    font-size: 5rem;
+    margin-top: 20px;
+    color:  #f08a5d; 
+}
+
+.whyicoto{
+    display: flex;
+    padding: 2%;
+}
+
+.hea1{
+    margin-left: 3%;
+    font-size: 1.5rem; 
+}
+
+.hea1 h1{
+    color: #f08a5d ;
+}
+
+.whycho{
+    /* margin-top:5%;
+    margin-bottom:5%; */
+   padding-top: 5%; 
+   margin-top: 30px;
+   padding-bottom: 5%;
+}
+
+@media all and (min-width: 730px){
+    
+    .imgdiv img{
+        width: 50vw;
+        height: 100%;
+    }
+
+   .imgdiv{
+       display: flex;
+   } 
+  
+   .whyicoto{
+       width: 50vw;
+       position: relative;
+       right: 0px;
+   }
+
+   .why{
+    position: absolute;
+    font-size: 2rem;
+     margin-top: 10%;
+     margin-left: 10%; 
+     font-weight: 1000;
+     text-decoration: underline;
+    color: whitesmoke; 
+    transition: 2s letter-sapcing ease-in-out,  2s padding-left;
+}
+
+}  
+
+
+/* review system */
+
+.revie{
+   font-size: 2rem;
+    padding-top: 10px;
+   margin-bottom: 1rem;
+   text-align: center;
+}
+
+.revwidth{
+  width:300px;
+  height:400px;
+  padding: 15px;
+   text-align: center;
+  margin: auto;
+  font-size: 22px;
+  overflow-y: auto;
+  scrollbar-width:none;
+background-image: linear-gradient(#FFE05D,#FF9642);
+}
+
+.revwidth img{
+    border-radius: 50%;
+    margin-bottom: 30px;
+   
+}
+
+.revwidth23{
+  display: flex;
+  margin: 20px;
+}
+
+@media screen and (max-width:904px){
+    
+    #o1{
+        display: none;
+    }
+
+} 
+
+@media screen and (max-width:658px){
+    
+    #o2{
+        display: none;
+    }
+
+
+} 
+
+#o1:hover{
+    box-shadow: 10px 8px 15px grey;
+}
+
+#o2:hover{
+    box-shadow: 10px 8px 15px grey;
+}
+
+#o3:hover{
+    box-shadow: 10px 8px 15px grey;
+}
+
+#rightarrow{
+    font-size: 40px;
+    margin-right: 20px;
+    margin-top: 50px;
+}
+
+#leftarrow{
+    font-size: 40px;
+    margin-left: 20px;
+    margin-top: 50px;
+    
+}
+
+.dis1toc{
+    /* background-image: linear-gradient(to right, rgba(255,0,0,0.4), rgba(255,0,0,0.8)); */
+   background-color: #FFEFA0; 
+   height: 500px; 
+}
+
+/*  review system end */
+
+
+.abottoc{
+    width:80%;
+     font-size: 1.2rem;
+    margin: auto;
+    
+}
+
+.hel .abottoc {
+    text-decoration: underline;
+}
+
+.abttocema{
+   width:80%;
+    /* margin: auto;  */
+    margin-left: 14%;
+    font-size: 1.2rem;
+}
+
+
+.abottoch1{
+   margin-left: 3%;
+}
+
+.lastend{
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+    background-color: #625261;
+}
+
+.fot{
+    background-color: #e8e8e8;
+}
+
+.aboicon{
+     width: 50px;
+     font-size: 2rem;
+     
+     position:absolute;
+     right:0px;
+      box-shadow: 4px 5px 8px gray;
+      z-index: 100;
+     border-radius: 50%;
+     text-align: center;
+     background-color: black;
+
+}
+
+.aboicon a{
+    color: whitesmoke;
+}
+
+/* formcontainer*/
+
+.formcont{
+    width: 100%;
+    padding-top: 2rem;
+    background-color: #f6f5f5;
+}
+
+.login-label{
+    color:grey ;
+     display: block;
+    font-size: 25px;
+    width: 150px;
+    margin: 10px;
+}
+
+.login-label:hover{
+   color:white;
+   background-color: black;
+}
+
+.inputlogin{
+  font-size: 25px;
+    width: 85%;
+    margin: 10px;
+    padding: 15px;
+    transition: 1s margin; 
+}
+
+.inputlogin:focus{
+    font-weight: bold;
+    /* margin-left: 30px; */
+}
+
+.inputlogin:hover{
+    margin-left: 35px;
+font-weight: bold;
+}
+.loghe{
+    font-size: 30px;
+    margin: 10px; 
+    
+}
+
+.logsub{
+    display: block;
+    width: 30%;
+    max-width: 150px;
+    font-size: 25px;
+    margin: 10px; 
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #ffd57e;
+    margin-bottom: 20px;
+}
+
+@media all and (min-width: 730px){
+    .formfle{
+        display: flex;
+    }
+
+    .login{
+        width: 50%;
+       border-right: 3px solid black; 
+    }
+
+    .logup{
+        width: 50%;
+    }
+
+}
+
+/* bidlogform */
+
+.bidform{
+    margin: 20px;
+    box-shadow: 4px 5px 8px grey;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.bidlabel{
+    display: block;
+    font-size: 25px;
+    margin: 10px;
+}
+
+.bidinput{
+    width: 60%;
+    /* max-width: 400px; */
+    padding: 10px;
+    font-size: 20px;
+    transition: 2s transform;
+}
+
+.bidinput:hover{
+    transform: scale(1.2,1.2);
+    
+}
+
+.biddingsub{
+     display: block;
+    width: 30%;
+    max-width: 200px;
+    font-size: 25px;
+    margin: 10px; 
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    background-color: #ffd57e;
+    margin-bottom: 50px;
+}
+
+.conbidform{
+    /* margin: auto;
+    width: 70%;
+    /*display: flex;
+    justify-content: center; */
+    /* background-image: linear-gradient(#686d76,#eeeeee); */
+    z-index: -100;
+    padding-left: 10%;
+}
+
+
+/*  this is for showbid section */
+
+.contaishow{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    top:150px  ;
+    overflow: hidden;
+    z-index: -10;
+}
+
+.divconsho{
+    width:200px;
+    height: 200px;
+    background-color: #f6f6f6cc ;
+    margin: 10px;
+    padding-top: 20px;
+    text-align: center;
+    box-shadow: 4px 5px 8px grey;
+     transition: 2s transform;
+   
+}
+
+.divconsho:hover{
+    transform: scale(1.5,1.5);
+}
+
+.divconsho p{
+    margin-top: 0.5rem;
+    width: 100%;
+    background-color: blue;
+    text-align: center;
+    font-size:30px ;
+    font-weight: 900;
+}
+
+
+.imgpag{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block1{
+    background-color:rebeccapurple;
+    border: 3px solid black;
+    width: 310px;
+    padding: 5px;
+    margin: 5px;
+}
+
+#bidpri{
+    width: 100px;
+    height: 30px;
+    padding: 5px;
+}
+
+#butbid{
+    width: 50px;
+    height: 30px;
+    background-color: orange;
+}
+
+/* this code for support1.php*/
+
+.reviewform{
+    width: 100%;
+    padding-left: 20%;
+     
+     background-color: #f6f6f6cc;
+}
+
+.reviewformblo label{
+    font-size: 25px;
+    display: block;
+    margin: 10px;
+    width: 200px;
+}
+
+.reviewformblo label:hover{
+    background-color: black;
+    color: white;
+}
+
+.reviewformblo input{
+    display: block;
+    font-size: 18px;
+    padding: 10px;
+    width: 60%;
+}
+
+#revi{
+    width: 60%;
+    font-size: 18px;
+    padding: 15px;
+    height: 200px;
+}
+
+#subrev{
+    margin-top:20px ;
+     margin-bottom: 20px;
+    background-color: #ffd57e;
+    font-size: 25px;
+}
+
+
+
+
+
